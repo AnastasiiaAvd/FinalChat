@@ -10,7 +10,7 @@ namespace Chat.Models
         /// <summary>
         /// Дата создания
         /// </summary>
-        public DateTime CreationDate { get; set; }
+        public string CreationDate { get; set; }
 
         /// <summary>
         /// Имя автора сообщения

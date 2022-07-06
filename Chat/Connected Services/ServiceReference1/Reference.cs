@@ -450,14 +450,14 @@ namespace ServiceReference1
     public partial class MessageDto : object
     {
         
-        private System.DateTime CreationDateField;
+        private string CreationDateField;
         
         private string DisplayNameField;
         
         private string TextField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime CreationDate
+        public string CreationDate
         {
             get
             {

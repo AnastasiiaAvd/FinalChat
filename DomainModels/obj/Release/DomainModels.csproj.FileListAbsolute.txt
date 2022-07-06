@@ -11,3 +11,16 @@ C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\DomainModels\obj\Release\Do
 C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\DomainModels\obj\Release\DomainModels.csproj.CopyComplete
 C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\DomainModels\obj\Release\DomainModels.dll
 C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\DomainModels\obj\Release\DomainModels.pdb
+D:\FinalChat\DomainModels\bin\Release\DomainModels.dll.config
+D:\FinalChat\DomainModels\bin\Release\DomainModels.dll
+D:\FinalChat\DomainModels\bin\Release\DomainModels.pdb
+D:\FinalChat\DomainModels\bin\Release\EntityFramework.dll
+D:\FinalChat\DomainModels\bin\Release\EntityFramework.SqlServer.dll
+D:\FinalChat\DomainModels\bin\Release\System.ComponentModel.Annotations.dll
+D:\FinalChat\DomainModels\bin\Release\EntityFramework.xml
+D:\FinalChat\DomainModels\bin\Release\EntityFramework.SqlServer.xml
+D:\FinalChat\DomainModels\obj\Release\DomainModels.csproj.AssemblyReference.cache
+D:\FinalChat\DomainModels\obj\Release\DomainModels.csproj.CoreCompileInputs.cache
+D:\FinalChat\DomainModels\obj\Release\DomainModels.csproj.CopyComplete
+D:\FinalChat\DomainModels\obj\Release\DomainModels.dll
+D:\FinalChat\DomainModels\obj\Release\DomainModels.pdb

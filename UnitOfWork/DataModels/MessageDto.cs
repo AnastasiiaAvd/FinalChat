@@ -13,7 +13,7 @@ namespace UnitOfWork.DataModels
         /// Дата создания
         /// </summary>
         [DataMember]
-        public DateTime CreationDate { get; set; }
+        public string CreationDate { get; set; }
 
         /// <summary>
         /// Имя автора сообщения
