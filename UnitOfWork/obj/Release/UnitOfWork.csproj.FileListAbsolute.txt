@@ -1,0 +1,15 @@
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\UnitOfWork\bin\Release\UnitOfWork.dll.config
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\UnitOfWork\bin\Release\UnitOfWork.dll
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\UnitOfWork\bin\Release\UnitOfWork.pdb
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\UnitOfWork\bin\Release\DomainModels.dll
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\UnitOfWork\bin\Release\EntityFramework.dll
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\UnitOfWork\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\UnitOfWork\bin\Release\DomainModels.pdb
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\UnitOfWork\bin\Release\DomainModels.dll.config
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\UnitOfWork\bin\Release\EntityFramework.xml
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\UnitOfWork\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\UnitOfWork\obj\Release\UnitOfWork.csproj.AssemblyReference.cache
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\UnitOfWork\obj\Release\UnitOfWork.csproj.CoreCompileInputs.cache
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\UnitOfWork\obj\Release\UnitOfWork.csproj.CopyComplete
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\UnitOfWork\obj\Release\UnitOfWork.dll
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\UnitOfWork\obj\Release\UnitOfWork.pdb

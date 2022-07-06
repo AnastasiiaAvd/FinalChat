@@ -1,0 +1,13 @@
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\DomainModels\bin\Release\DomainModels.dll.config
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\DomainModels\bin\Release\DomainModels.dll
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\DomainModels\bin\Release\DomainModels.pdb
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\DomainModels\bin\Release\EntityFramework.dll
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\DomainModels\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\DomainModels\bin\Release\System.ComponentModel.Annotations.dll
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\DomainModels\bin\Release\EntityFramework.xml
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\DomainModels\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\DomainModels\obj\Release\DomainModels.csproj.AssemblyReference.cache
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\DomainModels\obj\Release\DomainModels.csproj.CoreCompileInputs.cache
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\DomainModels\obj\Release\DomainModels.csproj.CopyComplete
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\DomainModels\obj\Release\DomainModels.dll
+C:\Users\Anastasiia.Avdeichik\source\repos\FinalChat\DomainModels\obj\Release\DomainModels.pdb
