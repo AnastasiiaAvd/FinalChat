@@ -1,6 +1,7 @@
 ﻿using DomainModels;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 using UnitOfWork;
@@ -26,7 +27,7 @@ namespace WcfService
             {
                 Id = applicationUser.Id,
                 Email = applicationUser.Email,
-                Password = applicationUser.Password
+                Password = applicationUser.Password, Color = applicationUser.Color
             };
 
             return ww;
@@ -49,21 +50,14 @@ namespace WcfService
 
         public void AddUser(string login, string password)
         {
+            Random _random = new Random();
+            var c = Color.FromArgb(_random.Next(0, 255), _random.Next(0, 255), _random.Next(0, 255));
+            var newCol = "#" + c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2");
             var user = new ApplicationUser
             {
                 Password = password,
-                Email = login
-            };
-            unitOfWork.ApplicationUsers.Add(user);
-            unitOfWork.SaveChanges();
-        }
-
-        public async Task AddUserAsync(string login, string password)
-        {
-            var user = new ApplicationUser
-            {
-                Password = password,
-                Email = login
+                Email = login, 
+                Color = newCol
             };
             unitOfWork.ApplicationUsers.Add(user);
             unitOfWork.SaveChanges();
@@ -143,7 +137,8 @@ namespace WcfService
             {
                 Id = applicationUser.Id,
                 Email = applicationUser.Email,
-                Password = applicationUser.Password
+                Password = applicationUser.Password, 
+                Color = applicationUser.Color
             };
             return ww;
         }

@@ -23,5 +23,8 @@ namespace UnitOfWork.DataModels
         /// </summary>
         [DataMember]
         public string Password { get; set; }
+
+        [DataMember]
+        public string Color { get; set; }
     }
 }

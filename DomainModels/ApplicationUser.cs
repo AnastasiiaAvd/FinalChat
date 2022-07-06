@@ -38,6 +38,8 @@ namespace DomainModels
         [Required]
         public string Password { get; set; }
 
+        public string Color { get; set; }
+
         public virtual ICollection<Chat> OwnerChats { get; set; }
         public virtual ICollection<Chat> GuestChats { get; set; }
 

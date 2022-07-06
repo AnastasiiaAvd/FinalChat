@@ -115,6 +115,8 @@ namespace ServiceReference1
     public partial class ApplicationUser : object
     {
         
+        private string ColorField;
+        
         private string EmailField;
         
         private ServiceReference1.Chat[] GuestChatsField;
@@ -126,6 +128,19 @@ namespace ServiceReference1
         private ServiceReference1.Chat[] OwnerChatsField;
         
         private string PasswordField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Color
+        {
+            get
+            {
+                return this.ColorField;
+            }
+            set
+            {
+                this.ColorField = value;
+            }
+        }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string Email
@@ -361,11 +376,26 @@ namespace ServiceReference1
     public partial class UserDataModel : object
     {
         
+        private string ColorField;
+        
         private string EmailField;
         
         private System.Guid IdField;
         
         private string PasswordField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Color
+        {
+            get
+            {
+                return this.ColorField;
+            }
+            set
+            {
+                this.ColorField = value;
+            }
+        }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string Email
