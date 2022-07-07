@@ -94,7 +94,7 @@ namespace WcfService
                                  join user in unitOfWork.ApplicationUsers.GetAll() on message.MessageAuthorId equals user.Id
                                  where message.ChatId == chatId
                                  select new MessageDto
-                                 { DisplayName = user.Email, Text = message.Text, CreationDate = message.CreationDate.ToString("dddd, dd MMMM HH:mm"), Color = user.Color})
+                                 { DisplayName = user.Email, Text = message.Text, Color = user.Color, CreationDate = message.CreationDate.ToString("dddd, dd MMMM HH:mm")})
                     .OrderBy(message => message.CreationDate).ToList();
 
 

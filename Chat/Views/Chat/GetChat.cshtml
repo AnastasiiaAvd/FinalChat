@@ -21,7 +21,7 @@
         <div class="chat">
           <div class="chat-avatar">
             <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="June Lane">
-              <img src="https://png.pngtree.com/png-vector/20190114/ourlarge/pngtree-vector-avatar-icon-png-image_313572.jpg" alt="...">
+              <img src="https://png.pngtree.com/png-vector/20190114/ourlarge/pngtree-vector-avatar-icon-png-image_313572.jpg" alt="..."  data-bind="style:{'border-color': Color()}">
               <i></i>
             </a>
           </div>
@@ -62,6 +62,7 @@
         var vm = this;
         vm.Model = ko.mapping.fromJS(model);
         vm.TextField = ko.observable("");
+        vm.Color = ko.observable();
 
         var chatId = vm.Model.ChatId();
 
@@ -69,15 +70,17 @@
             .withUrl("/chat")
             .build();
 
-        hubConnection.on("Receive", function (message, userName, date) {
+        hubConnection.on("Receive", function (message, userName, date, color) {
 
             vm.Model.Messages.push(
                 {
                     DisplayName: ko.observable(userName),
                     CreationDate: ko.observable(date),
-                    Text: ko.observable(message)
+                    Text: ko.observable(message),
+                    Color: ko.observable(color)
                 }
             );
+
 
         });
 

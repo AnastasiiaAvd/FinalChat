@@ -25,11 +25,11 @@ namespace Chat.Hubs
         {
             //var user = Context.User.Identity.Name;
             var userId = Guid.Parse(Context.User.Claims.First().Value);
-            var user = _service.GetUserByIdAsync(userId);
+            var user =await _service.GetUserByIdAsync(userId);
 
             var messageDate =await _service.AddMessageAsync(Guid.Parse(chatRoomId), message, userId);
 
-            await Clients.Group(chatRoomId).SendAsync("Receive", message, user.Result.Email, messageDate);
+            await Clients.Group(chatRoomId).SendAsync("Receive", message, user.Email, messageDate.ToString("dddd, dd MMMM HH:mm"), user.Color);
         }
     }
 }

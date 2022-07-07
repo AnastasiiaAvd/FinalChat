@@ -18,10 +18,10 @@
     float: right
 }
 
-    .chat-avatar .avatar {
-        width: 30px -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
-        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
-    }
+.chat-avatar .avatar {
+    width: 30px -webkit-box-shadow:0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+}
 
 .chat-body {
     display: block;
@@ -115,7 +115,8 @@
     width: 100%;
     max-width: 100%;
     height: auto;
-    border: 0 none;
+    border: 3px solid;
+ /*   border-color: red;*/
     border-radius: 1000px;
 }
 
