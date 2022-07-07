@@ -4,50 +4,52 @@
 @using Newtonsoft.Json
 @using Newtonsoft.Json.Converters
 @model Chat.Models.ChatDto;
-<head><link rel="stylesheet" href="~/css/GetChatStyles.css" asp-append-version="true" /> </head>
-<br />
+<head>
+    <link rel="stylesheet" href="~/css/GetChatStyles.css" asp-append-version="true"/>
+</head>
+<br/>
 
 <div class="container bootstrap snippets bootdeys">
-<div class="col-md-7 col-xs-12 col-md-offset-2">
-  <!-- Panel Chat -->
-  <div class="panel" id="chat">
-    <div class="panel-heading">
-      <h3 class="panel-title">
-        <i class="icon wb-chat-text" aria-hidden="true">Chat</i>
-      </h3>
-    </div>
-    <div id="chatroom" class="panel-body">
-      <div class="chats" data-bind="foreach: $root.Model.Messages()">
-        <div class="chat">
-          <div class="chat-avatar">
-            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="June Lane">
-              <img src="https://png.pngtree.com/png-vector/20190114/ourlarge/pngtree-vector-avatar-icon-png-image_313572.jpg" alt="..."  data-bind="style:{'border-color': Color()}">
-              <i></i>
-            </a>
-          </div>
-          <div class="chat-body">
-            <div class="chat-content">
-                <span class="chat-time" data-bind="text: DisplayName"></span>
-              <p data-bind="text: Text"></p>
-              <time class="chat-time" data-bind="text: CreationDate"></time>
+    <div class="col-md-7 col-xs-12 col-md-offset-2">
+        <!-- Panel Chat -->
+        <div class="panel" id="chat">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <i class="icon wb-chat-text" aria-hidden="true">Chat</i>
+                </h3>
             </div>
-          </div>
-        </div>       
-      </div>
-    </div>
-    <div id="inputForm" class="panel-footer">
-      <form>
-        <div class="input-group">
-          <input id="message" type="text" class="form-control" placeholder="Введите сообщение..." data-bind="value: $root.TextField">
-          <span class="input-group-btn">
-            <button id="sendBtn" class="btn btn-primary" type="button" data-bind="click: $root.SendMessage">Отправить</button>
-          </span>
+            <div id="chatroom" class="panel-body">
+                <div class="chats" data-bind="foreach: $root.Model.Messages()">
+                    <div class="chat">
+                        <div class="chat-avatar">
+                            <a class="avatar avatar-online" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="June Lane">
+                                <img src="https://png.pngtree.com/png-vector/20190114/ourlarge/pngtree-vector-avatar-icon-png-image_313572.jpg" alt="..." data-bind="style:{'border-color': Color()}">
+                                <i></i>
+                            </a>
+                        </div>
+                        <div class="chat-body">
+                            <div class="chat-content">
+                                <span class="chat-time" data-bind="text: DisplayName"></span>
+                                <p data-bind="text: Text"></p>
+                                <time class="chat-time" data-bind="text: CreationDate"></time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="inputForm" class="panel-footer">
+                <form>
+                    <div class="input-group">
+                        <input id="message" type="text" class="form-control" placeholder="Введите сообщение..." data-bind="value: $root.TextField">
+                        <span class="input-group-btn">
+                            <button id="sendBtn" class="btn btn-primary" type="button" data-bind="click: $root.SendMessage">Отправить</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
         </div>
-      </form>
+        <!-- End Panel Chat -->
     </div>
-  </div>
-  <!-- End Panel Chat -->
-</div>
 </div>
 
 
@@ -70,19 +72,18 @@
             .withUrl("/chat")
             .build();
 
-        hubConnection.on("Receive", function (message, userName, date, color) {
+        hubConnection.on("Receive",
+            function(message, userName, date, color) {
 
-            vm.Model.Messages.push(
-                {
-                    DisplayName: ko.observable(userName),
-                    CreationDate: ko.observable(date),
-                    Text: ko.observable(message),
-                    Color: ko.observable(color)
-                }
-            );
-
-
-        });
+                vm.Model.Messages.push(
+                    {
+                        DisplayName: ko.observable(userName),
+                        CreationDate: ko.observable(date),
+                        Text: ko.observable(message),
+                        Color: ko.observable(color)
+                    }
+                );
+            });
 
         vm.SendMessage = function() {
             let message = vm.TextField();
@@ -94,11 +95,10 @@
             vm.TextField("");
         }
 
-        hubConnection.start().then(function(results){
-                    hubConnection.invoke("JoinToChat", chatId);
-                });
+        hubConnection.start().then(function(results) {
+            hubConnection.invoke("JoinToChat", chatId);
+        });
     }
-    
 
     $(function() {
 
@@ -106,8 +106,8 @@
         ko.applyBindings(model);
     });
 
-    $(function(){
-    $(".chat-list-wrapper, .message-list-wrapper").niceScroll();
-}) 
+    $(function() {
+        $(".chat-list-wrapper, .message-list-wrapper").niceScroll();
+    });
 
 </script>
