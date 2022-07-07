@@ -26,5 +26,8 @@ namespace UnitOfWork.DataModels
         /// </summary>
         [DataMember]
         public string Text { get; set; }
+
+        [DataMember]
+        public string Color { get; set; }
     }
 }

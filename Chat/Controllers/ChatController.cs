@@ -31,7 +31,8 @@ namespace Chat.Controllers
                 {
                     CreationDate = messageDto.CreationDate,
                     DisplayName = messageDto.DisplayName,
-                    Text = messageDto.Text
+                    Text = messageDto.Text, 
+                    Color = messageDto.Color
                 });
             }
 

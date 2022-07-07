@@ -480,11 +480,26 @@ namespace ServiceReference1
     public partial class MessageDto : object
     {
         
+        private string ColorField;
+        
         private string CreationDateField;
         
         private string DisplayNameField;
         
         private string TextField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Color
+        {
+            get
+            {
+                return this.ColorField;
+            }
+            set
+            {
+                this.ColorField = value;
+            }
+        }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string CreationDate
